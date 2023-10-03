@@ -29,6 +29,10 @@ const config: Config = {
         'custom-blue': '#1d9ded',
         "custom-purple": "#3F0071"
       },
+      boxShadow: {
+        'headerWhite': '0px 3px 6px rgba(0, 0, 0, 0.16)',
+        'headerblack': '0px 3px 6px #4b5056',
+      }
     }
   },
 };
