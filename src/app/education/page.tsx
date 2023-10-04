@@ -45,8 +45,6 @@ export default function Education() {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 }
