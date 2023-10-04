@@ -32,6 +32,12 @@ const config: Config = {
       boxShadow: {
         'headerWhite': '0px 3px 6px rgba(0, 0, 0, 0.16)',
         'headerblack': '0px 3px 6px #4b5056',
+      },
+      strokeWidth: {
+        '3rem': '3rem',
+      },
+      borderWidth: {
+        5: "5px"
       }
     }
   },

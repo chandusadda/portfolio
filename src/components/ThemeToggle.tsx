@@ -1,6 +1,7 @@
 "use client";
 
-import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
 
 function ThemeToggle() {
@@ -13,12 +14,18 @@ function ThemeToggle() {
         onClick={() => {
           setTheme(theme === "light" ? "dark" : "light");
         }}
-        title="change theme"
+        title={`change to ${theme === "light" ? "dark" : "light"} theme`}
       >
-        {theme === "light" ? (
-          <SunIcon className="h-6 w-6 mb-[-0.25rem] text-custom-purple" />
+        {theme === "dark" ? (
+          <FontAwesomeIcon
+            icon={faMoon}
+            className="h-6 w-6 text-custom-blue"
+          />
         ) : (
-          <MoonIcon className="h-6 w-6 mb-[-0.25rem] text-custom-blue" />
+          <FontAwesomeIcon
+            icon={faSun}
+            className="h-6 w-6 text-custom-purple"
+          />
         )}
       </button>
     </>
