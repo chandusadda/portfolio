@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 // NavBarElement component
 export function NavBarElement(props: any) {
@@ -40,6 +41,7 @@ const HeaderComp = () => {
       <div className="font-bold py-4 text-2xl font-customFont">
         Chandu{" "}
         <span className=" text-custom-purple dark:text-custom-blue">Sadda</span>
+        <ThemeToggle />
       </div>
       {/* {theme && pathname && ( */}
         <div className="mr-5 ml-auto flex">

@@ -13,7 +13,6 @@ export default function Home() {
           </h1>
           <p className="italic text-2xl">with app-dir</p>
 
-          <ThemeToggle />
         </div>
       </div>
       <FooterComp />
