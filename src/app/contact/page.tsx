@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
   return (
-    <div className="py-20 px-5 flex flex-col items-start mt-20 justify-center">
+    <div className="py-20 px-10 flex flex-col items-start mt-20 justify-center">
       <h3 className="text-5xl mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
         Get in{" "}
         <span className=" text-custom-purple dark:text-custom-blue">Touch</span>

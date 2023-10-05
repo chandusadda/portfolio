@@ -10,10 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-white dark:bg-black min-h-[100dvh]">
+      <body className="bg-white dark:bg-black min-h-[100vh] overflow-y-auto">
         <ThemeProvider storageKey="theme" enableSystem={false} attribute="class">
           <HeaderComp />
-          <div className="w-full container p-4 mx-auto h-[100vh]">
+          <div className="w-full">
             {children}
           </div>
           <FooterComp />

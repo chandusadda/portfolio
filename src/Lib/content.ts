@@ -51,7 +51,8 @@ export default {
     ug: {
       name: "Anna University, Chennai",
       type: "University",
-      course: "B.Tech in Electronics Communication",
+      college: "Jaya Institute Of Technology",
+      course: "B.E in Electronics Communication",
       duration: "2015",
     }
   },

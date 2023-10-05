@@ -26,20 +26,21 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'custom-blue': '#1d9ded',
-        "custom-purple": "#3F0071"
+        "custom-blue": "#1d9ded",
+        "custom-purple": "#3F0071",
       },
       boxShadow: {
-        'headerWhite': '0px 3px 6px rgba(0, 0, 0, 0.16)',
-        'headerblack': '0px 3px 6px #4b5056',
+        headerWhite: "0px 3px 6px rgba(0, 0, 0, 0.16)",
+        headerblack: "0px 3px 6px #4b5056",
+        dot: "rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px",
       },
       strokeWidth: {
-        '3rem': '3rem',
+        "3rem": "3rem",
       },
       borderWidth: {
-        5: "5px"
-      }
-    }
+        5: "5px",
+      },
+    },
   },
 };
 export default config;

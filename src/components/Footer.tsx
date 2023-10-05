@@ -3,7 +3,7 @@ import React from "react";
 const FooterComp = () => {
 
     return (
-        <footer className="w-full text-center">
+        <footer className="w-full text-center bottom-0 relative">
             <div className="w-full container p-4 mb-5 mx-auto">
             Developed by{" "}
               <a

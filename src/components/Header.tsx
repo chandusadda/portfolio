@@ -37,7 +37,7 @@ const HeaderComp = () => {
   const { theme } = useTheme();
 
   return (
-    <header className="header-main fixed top-0 right-0 left-auto px-6 flex flex-auto shadow-headerWhite dark:shadow-headerblack">
+    <header className="w-full top-0 right-0 left-auto px-6 flex flex-auto shadow-headerWhite dark:shadow-headerblack">
       <div className="font-bold py-4 text-2xl font-customFont">
         <Link href={`/`} className="no-underline">
           Chandu{" "}
