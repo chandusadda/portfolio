@@ -10,7 +10,7 @@ export default function Work() {
         </h3>
         <div className="p-2 w-full flex flex-wrap items-stretch">
           {Content.work.map((work, index) => {
-            return <WorkExperienceCards key={index} work={work} />;
+            return <WorkExperienceCards indexVal={index} work={work} />;
           })}
         </div>
       </div>

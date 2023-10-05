@@ -34,5 +34,5 @@ export interface WorkExpInterface {
       link: string;
       achievements: string[];
     };
-    key?: number;
+    indexVal?: number;
   }
