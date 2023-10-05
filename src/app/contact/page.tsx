@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
   return (
-    <div className="py-20 px-10 flex flex-col items-start mt-20 justify-center">
+    <div className="p-20 flex flex-col items-start mt-20 justify-center">
       <h3 className="text-5xl mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
-        Get in{" "}
+        Get in
         <span className=" text-custom-purple dark:text-custom-blue">Touch</span>
       </h3>
       <h5 className="text-2xl mb-5 font-light">Primary</h5>
@@ -43,7 +43,7 @@ export default function Contact() {
           <FontAwesomeIcon
             className="h-7 w-7 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
             icon={faGithub}
-          />{" "}
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/chandusadda/"
@@ -53,13 +53,13 @@ export default function Contact() {
           <FontAwesomeIcon
             className="h-7 w-7 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
             icon={faLinkedin}
-          />{" "}
+          />
         </a>
         <a href="https://twitter.com/chandu_sadda" target="_blank">
           <FontAwesomeIcon
             className="h-7 w-7 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
             icon={faTwitter}
-          />{" "}
+          />
         </a>
       </div>
       <h5 className="text-2xl mb-5 mt-6 font-light">Resume</h5>
