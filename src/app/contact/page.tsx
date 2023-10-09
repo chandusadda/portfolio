@@ -11,7 +11,7 @@ export default function Contact() {
     <div className="p-20 flex flex-col items-start mt-20 justify-center">
       <h3 className="text-5xl mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
         Get in
-        <span className=" text-custom-purple dark:text-custom-blue">Touch</span>
+        <span className=" text-custom-purple dark:text-custom-blue"> Touch</span>
       </h3>
       <h5 className="text-2xl mb-5 font-light">Primary</h5>
       <div className="flex">
