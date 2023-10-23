@@ -6,7 +6,7 @@ const WorkExperienceCard = ({ work, indexVal }: WorkExpInterface) => {
 
   return (
     <Fragment key={indexVal}>
-      <div className="basis-[48%] mr-4 mb-4 font-customFont shadow-dot dark:shadow-[#9fa6ad] rounded flex flex-column justify-between">
+      <div className="basis-[48%] mr-[1.2rem] mb-5 font-customFont shadow-workDarkCards dark:shadow-workDarkCards rounded flex flex-column justify-between">
         <div className="p-4">
           <h4 className="mt-2 font-customFont text-custom-purple dark:text-custom-blue font-light text-2xl">
             {work.company}

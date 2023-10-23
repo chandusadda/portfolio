@@ -68,3 +68,21 @@ b, strong {
 .scroll-btn .mouse>* {
     animation: ani-mouse 2.5s linear infinite;
 }
+
+@media (max-width: 765px) {
+  .header-links {
+    display: none;
+  }
+  .header-hanberger {
+    display: block;
+  }
+}
+
+@media (min-width: 766px) {
+  .header-links {
+    display: flex;
+  }
+  .header-hanberger {
+    display: none;
+  }
+}
