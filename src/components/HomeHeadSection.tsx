@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-import ChanduSadda from "@/Assets/chandu_pic.jpg";
+import ChanduSadda from "@/Assets/my-new-dp2.jpg";
 
 export default function HomeHeadSection() {
   return (
