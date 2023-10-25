@@ -10,10 +10,10 @@ export default function HomeHeadSection() {
     <>
       <div className="p-2 w-full flex flex-wrap items-stretch">
         <div className=" flex-grow-0 md:basis-1/2 sm:basis-full mt-10">
-          <h3 className="text-5xl mb-5 text-gray-800 dark:text-gray-100 font-light">
+          <h3 className="txt-lg mb-5 text-gray-800 dark:text-gray-100 font-light">
             Hey!
           </h3>
-          <h3 className="text-5xl mb-5 text-gray-800 dark:text-gray-100 font-bold">
+          <h3 className="txt-lg mb-5 text-gray-800 dark:text-gray-100 font-bold">
             I&apos;m{" "}
             <span className="text-custom-purple dark:text-custom-blue">
               Chandu.

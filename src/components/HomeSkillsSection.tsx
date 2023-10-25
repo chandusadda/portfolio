@@ -22,7 +22,7 @@ export default function HomeSkillsSection() {
         className="p-2 w-full flex flex-wrap items-stretch"
       >
         <div className=" flex-grow-0 basis-full px-10 font-customFont">
-          <h3 className="text-5xl mb-8 text-gray-800 dark:text-gray-100 font-bold">
+          <h3 className="txt-lg mb-8 text-gray-800 dark:text-gray-100 font-bold">
             My{" "}
             <span className="text-custom-purple dark:text-custom-blue">
               Skills

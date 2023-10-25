@@ -87,6 +87,9 @@ b, strong {
     margin-left: auto;
     margin-right: auto;
   }
+  .txt-lg {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 766px) {
@@ -101,6 +104,9 @@ b, strong {
   }
   .education-details, .education-img {
     float: left;
+  }
+  .txt-lg {
+    font-size: 3rem;
   }
 }
 

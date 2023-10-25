@@ -4,9 +4,9 @@ import Content from "@/Lib/content";
 
 export default function Education() {
   return (
-    <div className="pt-4 mb-10 pb-2 h-[90vh]">
-      <div className=" py-5 px-5 flex flex-col items-start mt-17 ml-10 justify-center">
-        <h3 className="text-5xl mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
+    <div className="pt-4 mb-10 pb-2">
+      <div className=" py-5 px-5 flex flex-col items-start mt-17 md:ml-10 justify-center">
+        <h3 className="txt-lg mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
           Education{" "}
         </h3>
         <div className=" w-full mt-12">
