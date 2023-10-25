@@ -9,18 +9,18 @@ export default function Education() {
         <h3 className="text-5xl mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
           Education{" "}
         </h3>
-        <div className="flex items-center w-full mt-12">
-          <div>
+        <div className=" w-full mt-12">
+          {/* <div className=" flex-grow-0 md:basis-1/4 sm:basis-full"> */}
             <Image
               src={ChanduSadda?.src}
               alt="Chandu Sadda"
-              className={"ml-10 rounded-xl"}
+              className={"ml-auto rounded-xl h-72 w-80 education-img"}
               draggable="false"
               width={250}
               height={300}
             />
-          </div>
-          <div className="flex">
+          {/* </div> */}
+          <div className="flex education-details mt-20">
             <div className=" w-64 text-end p-5">
               <h6 className="text-xl"> {Content.education.ug.type}</h6>
               <h6 className=" font-extralight text-lg">

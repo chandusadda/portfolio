@@ -48,13 +48,13 @@ export default function HomeHeadSection() {
             </a>
           </button>
         </div>
-        <div className="flex-grow-0 md:basis-1/2 sm:basis-full mt-10 mx-auto">
+        <div className="flex-grow-0 md:basis-1/2 sm:basis-full mt-12 mx-auto">
           <Image
             src={ChanduSadda?.src}
             alt="Chandu Sadda"
-            className={"mx-10 h-96 w-8/12"}
+            className={"mx-auto h-96 w-[60%]"}
             draggable="false"
-            width="500"
+            width="400"
             height="400"
             priority={false}
           />

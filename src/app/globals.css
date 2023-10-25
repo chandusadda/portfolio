@@ -79,6 +79,14 @@ b, strong {
   .work-cards {
     flex-basis: 100%;
   }
+  .education-details {
+    width: 100%;
+  }
+  .education-img {
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 766px) {
@@ -90,6 +98,9 @@ b, strong {
   }
   .work-cards {
     flex-basis: 47%;
+  }
+  .education-details, .education-img {
+    float: left;
   }
 }
 
