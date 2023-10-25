@@ -73,8 +73,11 @@ b, strong {
   .header-links {
     display: none;
   }
-  .header-hanberger {
+  .header-hanberger, .sidebar {
     display: block;
+  }
+  .work-cards {
+    flex-basis: 100%;
   }
 }
 
@@ -82,7 +85,16 @@ b, strong {
   .header-links {
     display: flex;
   }
-  .header-hanberger {
+  .header-hanberger, .sidebar {
     display: none;
+  }
+  .work-cards {
+    flex-basis: 47%;
+  }
+}
+
+@media (min-width: 1071px) {
+  .work-cards {
+    flex-basis: 48%;
   }
 }

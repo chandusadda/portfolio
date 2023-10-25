@@ -32,6 +32,34 @@ export function NavBarElement(props: any) {
   );
 }
 
+// SideBarElement component
+export function SideBarElement(props: any) {
+  const { themeVal, pathname, pathCheck } = props;
+  return (
+    <Link href={`${pathname}`}>
+      <div>
+        <div
+          className={`py-2 px-6 mb-5 rounded ${
+            pathCheck && themeVal === "light"
+              ? "bg-custom-purple text-white"
+              : pathCheck && themeVal === "dark"
+              ? "bg-custom-blue text-white"
+              : "bg-[#f4f7fd] text-black"
+          }  font-medium  ${
+            pathCheck && themeVal === "dark"
+              ? "hover:bg-custom-blue"
+              : pathCheck && themeVal === "light"
+              ? "hover:bg-custom-purple"
+              : "hover:bg-[#DAE1EF]"
+          }`}
+        >
+          {props.children}
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 const HeaderComp = () => {
   const pathname = usePathname();
   const { theme } = useTheme();
@@ -95,14 +123,59 @@ const HeaderComp = () => {
         </svg>
       </div>
       {toggle && (
-        <div className=" h-[100vh] fixed z-[1200]">
+        <div className="sidebar h-[100vh] fixed z-[1200]">
           <div
             onClick={() => {
               setToggle(!toggle);
             }}
             className=" fixed flex inset-0 bg-[#00000080] -z-10"
           ></div>
-          <div className=" w-80 h-[100%] bg-white flex flex-col z-[1200] top-0 left-0 shadow-workDarkCards"></div>
+          <div className=" w-64 h-[100%] bg-white flex flex-col z-[1200] top-0 left-0 shadow-workDarkCards dark:bg-black">
+            <div className="font-bold pl-10 py-8 text-2xl font-customFont">
+              <Link href={`/`} className="no-underline">
+                Chandu{" "}
+                <span className=" text-custom-purple dark:text-custom-blue">
+                  Sadda
+                </span>
+              </Link>
+            </div>
+            <div className="mx-4">
+              <SideBarElement
+                pathname="/"
+                pathCheck={
+                  pathname === "/" ||
+                  pathname === "/home/" ||
+                  pathname === "/home"
+                }
+                themeVal={theme}
+              >
+                Home
+              </SideBarElement>
+              <SideBarElement
+                pathname="/education"
+                pathCheck={
+                  pathname === "/education" || pathname === "/education/"
+                }
+                themeVal={theme}
+              >
+                Education
+              </SideBarElement>
+              <SideBarElement
+                pathname="/work"
+                pathCheck={pathname === "/work" || pathname === "/work/"}
+                themeVal={theme}
+              >
+                Work
+              </SideBarElement>
+              <SideBarElement
+                pathname="/contact"
+                pathCheck={pathname === "/contact" || pathname === "/contact/"}
+                themeVal={theme}
+              >
+                Contact
+              </SideBarElement>
+            </div>
+          </div>
         </div>
       )}
       {/* )} */}
