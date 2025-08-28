@@ -7,7 +7,6 @@ export interface WorkExpInterface {
         | React.ReactElement<any, string | React.JSXElementConstructor<any>>
         | Iterable<React.ReactNode>
         | React.ReactPortal
-        | React.PromiseLikeOfReactNode
         | null
         | undefined;
       role:
@@ -17,7 +16,6 @@ export interface WorkExpInterface {
         | React.ReactElement<any, string | React.JSXElementConstructor<any>>
         | Iterable<React.ReactNode>
         | React.ReactPortal
-        | React.PromiseLikeOfReactNode
         | null
         | undefined;
       duration:
@@ -27,7 +25,6 @@ export interface WorkExpInterface {
         | React.ReactElement<any, string | React.JSXElementConstructor<any>>
         | Iterable<React.ReactNode>
         | React.ReactPortal
-        | React.PromiseLikeOfReactNode
         | null
         | undefined;
       description: any[];
