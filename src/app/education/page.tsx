@@ -28,7 +28,7 @@ export default function Education() {
               </h6>
             </div>
             <div className=" flex-[0_1_0%]">
-              <span className="testcl1 p-1 my-3 mt-7 shadow-dot flex border-solid border-transparent border-2 rounded-full bg-custom-purple dark:bg-custom-blue"></span>
+              <span className="testcl1 p-1 my-3 mt-7 shadow-dot flex border-solid border-transparent border-2 rounded-full bg-purple-900 dark:bg-blue-500"></span>
               <span className="bg-gray-400 h-14 block w-[2px] ml-[0.3rem]"></span>
             </div>
             <div className=" text-center p-5">

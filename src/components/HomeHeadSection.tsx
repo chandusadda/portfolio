@@ -15,7 +15,7 @@ export default function HomeHeadSection() {
           </h3>
           <h3 className="txt-lg mb-5 text-gray-800 dark:text-gray-100 font-bold">
             I&apos;m{" "}
-            <span className="text-custom-purple dark:text-custom-blue">
+            <span className="text-purple-900 dark:text-blue-500">
               Chandu.
             </span>
           </h3>
@@ -34,15 +34,15 @@ export default function HomeHeadSection() {
             />
           </h5>
           <Link href="/contact">
-            <button className=" mr-7 text-white bg-custom-purple border-custom-purple border-4 hover:border-5 p-3 rounded dark:border-custom-blue dark:bg-custom-blue">
+            <button className=" mr-7 text-white bg-purple-900 border-purple-900 border-4 hover:border-5 p-3 rounded dark:border-blue-500 dark:bg-blue-500">
               Get In Touch
-            </button>
+            </button> 
           </Link>
           <button>
             <a
               target="_blank"
               href={`https://drive.google.com/file/d/1AT4tLPCfpdkYPwJaqwlNRCc0jX2BAYxz/view?usp=sharing`}
-              className=" text-custom-purple border-custom-purple border-4 hover:border-5 p-3 rounded border-double dark:border-custom-blue dark:text-custom-blue"
+              className=" text-purple-900 border-purple-900 border-4 hover:border-5 p-3 rounded border-double dark:border-blue-500 dark:text-blue-500"
             >
               Download Resume
             </a>

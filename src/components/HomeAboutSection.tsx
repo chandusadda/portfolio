@@ -10,7 +10,7 @@ export default function HomeAboutSection() {
         <div className=" flex-grow-0 basis-full px-10 font-customFont">
           <h3 className="txt-lg mb-5 text-gray-800 dark:text-gray-100 font-bold">
             About{" "}
-            <span className="text-custom-purple dark:text-custom-blue">Me</span>
+            <span className="text-purple-900 dark:text-blue-500">Me</span>
           </h3>
           <h5 className="text-xl mb-8">
             Hailing from Tirupati, India, I presently serve as the{" "}

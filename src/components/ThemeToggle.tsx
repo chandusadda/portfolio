@@ -3,10 +3,19 @@
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState<boolean>(false);
 
+  useEffect(() => {
+    setMounted(true);
+  },[])
+  if(!mounted) {
+    return "loading..."
+  }
+  
   return (
     <>
       <button
@@ -19,12 +28,12 @@ function ThemeToggle() {
         {theme === "dark" ? (
           <FontAwesomeIcon
             icon={faMoon}
-            className="h-6 w-6 text-custom-blue"
+            className="h-6 w-6 text-blue-500"
           />
         ) : (
           <FontAwesomeIcon
             icon={faSun}
-            className="h-6 w-6 text-custom-purple"
+            className="h-6 w-6 text-purple-900"
           />
         )}
       </button>

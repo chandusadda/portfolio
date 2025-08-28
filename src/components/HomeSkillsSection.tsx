@@ -24,7 +24,7 @@ export default function HomeSkillsSection() {
         <div className=" flex-grow-0 basis-full px-10 font-customFont">
           <h3 className="txt-lg mb-8 text-gray-800 dark:text-gray-100 font-bold">
             My{" "}
-            <span className="text-custom-purple dark:text-custom-blue">
+            <span className="text-purple-900 dark:text-blue-500">
               Skills
             </span>
           </h3>
@@ -39,7 +39,7 @@ export default function HomeSkillsSection() {
                     label={item}
                     className={
                       index % 2 === 0
-                        ? "bg-custom-purple dark:bg-custom-blue text-white"
+                        ? "bg-purple-900 dark:bg-blue-500 text-white"
                         : " bg-black dark:bg-white text-white dark:text-black"
                     }
                   />
@@ -56,7 +56,7 @@ export default function HomeSkillsSection() {
                     label={item}
                     className={
                       index % 2 === 0
-                        ? "bg-custom-purple dark:bg-custom-blue text-white"
+                        ? "bg-purple-900 dark:bg-blue-500 text-white"
                         : " bg-black dark:bg-white text-white dark:text-black"
                     }
                   />
@@ -73,7 +73,7 @@ export default function HomeSkillsSection() {
                     label={item}
                     className={
                       index % 2 === 0
-                        ? "bg-custom-purple dark:bg-custom-blue text-white"
+                        ? "bg-purple-900 dark:bg-blue-500 text-white"
                         : " bg-black dark:bg-white text-white dark:text-black"
                     }
                   />
@@ -92,7 +92,7 @@ export default function HomeSkillsSection() {
                     label={item}
                     className={
                       index % 2 === 0
-                        ? "bg-custom-purple dark:bg-custom-blue text-white"
+                        ? "bg-purple-900 dark:bg-blue-500 text-white"
                         : " bg-black dark:bg-white text-white dark:text-black"
                     }
                   />
@@ -104,14 +104,14 @@ export default function HomeSkillsSection() {
             You can check out some of{" "}
             <a
               href="https://www.linkedin.com/in/chandusadda/"
-              className="text-custom-purple dark:text-custom-blue underline decoration-wavy"
+              className="text-purple-900 dark:text-blue-500 underline decoration-wavy"
               target="_blank"
               rel="noreferrer"
             >
               my work
             </a>{" "}
             or{" "}
-            <Link href="/contact" className="underline decoration-wavy text-custom-purple dark:text-custom-blue">
+            <Link href="/contact" className="underline decoration-wavy text-purple-900 dark:text-blue-500">
               get in touch
             </Link>{" "}
             with me.

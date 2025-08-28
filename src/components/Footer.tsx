@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const FooterComp = () => {
@@ -8,7 +10,7 @@ const FooterComp = () => {
             Developed by{" "}
               <a
                 href="https://www.linkedin.com/in/chandusadda/"
-                className=" text-custom-purple underline decoration-wavy dark:text-custom-blue"
+                className=" text-purple-900 underline decoration-wavy dark:text-blue-500"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -3,26 +3,35 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 // NavBarElement component
 export function NavBarElement(props: any) {
   const { themeVal, pathname, pathCheck } = props;
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) {
+    return "loading...";
+  }
+  
   return (
     <Link href={`${pathname}`}>
       <div>
         <div
           className={`py-4 mx-8 mt-1 ${
             pathCheck && themeVal === "light"
-              ? "text-custom-purple"
+              ? "text-purple-900"
               : pathCheck && themeVal === "dark"
-              ? "text-custom-blue"
+              ? "text-blue-500"
               : "text-gray-500"
           }  font-medium ${
             themeVal === "dark"
-              ? "hover:text-custom-blue"
-              : "hover:text-custom-purple"
+              ? "hover:text-blue-500"
+              : "hover:text-purple-900"
           }`}
         >
           {props.children}
@@ -41,15 +50,15 @@ export function SideBarElement(props: any) {
         <div
           className={`py-2 px-6 mb-5 rounded ${
             pathCheck && themeVal === "light"
-              ? "bg-custom-purple text-white"
+              ? "bg-purple-900 text-white"
               : pathCheck && themeVal === "dark"
-              ? "bg-custom-blue text-white"
+              ? "bg-blue-500 text-white"
               : "bg-[#f4f7fd] text-black"
           }  font-medium  ${
             pathCheck && themeVal === "dark"
-              ? "hover:bg-custom-blue"
+              ? "hover:bg-blue-500"
               : pathCheck && themeVal === "light"
-              ? "hover:bg-custom-purple"
+              ? "hover:bg-purple-900"
               : "hover:bg-[#DAE1EF]"
           }`}
         >
@@ -70,15 +79,14 @@ const HeaderComp = () => {
       <div className="font-bold pl-6 py-4 text-2xl font-customFont">
         <Link href={`/`} className="no-underline">
           Chandu{" "}
-          <span className=" text-custom-purple dark:text-custom-blue">
-            Sadda
-          </span>
+          <span className=" text-purple-900 dark:text-blue-500">Sadda</span>
         </Link>
         <ThemeToggle />
       </div>
       {/* {theme && pathname && ( */}
       <div className="mr-5 ml-auto flex header-links">
         <NavBarElement
+          key="home"
           pathname="/"
           pathCheck={
             pathname === "/" || pathname === "/home/" || pathname === "/home"
@@ -88,6 +96,7 @@ const HeaderComp = () => {
           Home
         </NavBarElement>
         <NavBarElement
+          key="education"
           pathname="/education"
           pathCheck={pathname === "/education" || pathname === "/education/"}
           themeVal={theme}
@@ -95,6 +104,7 @@ const HeaderComp = () => {
           Education
         </NavBarElement>
         <NavBarElement
+          key="work"
           pathname="/work"
           pathCheck={pathname === "/work" || pathname === "/work/"}
           themeVal={theme}
@@ -102,6 +112,7 @@ const HeaderComp = () => {
           Work
         </NavBarElement>
         <NavBarElement
+          key="contact"
           pathname="/contact"
           pathCheck={pathname === "/contact" || pathname === "/contact/"}
           themeVal={theme}
@@ -134,7 +145,7 @@ const HeaderComp = () => {
             <div className="font-bold pl-10 py-8 text-2xl font-customFont">
               <Link href={`/`} className="no-underline">
                 Chandu{" "}
-                <span className=" text-custom-purple dark:text-custom-blue">
+                <span className=" text-purple-900 dark:text-blue-500">
                   Sadda
                 </span>
               </Link>

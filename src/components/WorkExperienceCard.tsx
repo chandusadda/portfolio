@@ -8,7 +8,7 @@ const WorkExperienceCard = ({ work, indexVal }: WorkExpInterface) => {
     <Fragment key={indexVal}>
       <div className="work-cards mr-[1.2rem] mb-5 font-customFont shadow-workDarkCards dark:shadow-workDarkCards rounded flex flex-column justify-between">
         <div className="p-4">
-          <h4 className="mt-2 font-customFont text-custom-purple dark:text-custom-blue font-light text-2xl">
+          <h4 className="mt-2 font-customFont text-purple-900 dark:text-blue-500 font-light text-2xl">
             {work.company}
           </h4>
           <h5 className="mt-2 font-customFont text-[#9c27b0] font-light text-base">
@@ -27,7 +27,7 @@ const WorkExperienceCard = ({ work, indexVal }: WorkExpInterface) => {
           })}
           {work.achievements && work.achievements.length > 0 && (
             <>
-              <h4 className="mt-2 font-customFont text-custom-purple dark:text-custom-blue font-light text-2xl">
+              <h4 className="mt-2 font-customFont text-purple-900 dark:text-blue-500 font-light text-2xl">
                 {`Achievements`}
               </h4>
               {work.achievements.map((line, index) => {
@@ -45,7 +45,7 @@ const WorkExperienceCard = ({ work, indexVal }: WorkExpInterface) => {
               <a
                 target="_blank"
                 href={work.link}
-                className="text-custom-purple border-custom-purple mt-8 border-4 hover:border-5 p-3 rounded border-double float-right dark:border-custom-blue dark:text-custom-blue"
+                className="text-purple-900 border-purple-900 mt-8 border-4 hover:border-5 p-3 rounded border-double float-right dark:border-blue-500 dark:text-blue-500"
               >
                 View Website
               </a>

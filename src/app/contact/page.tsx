@@ -11,7 +11,7 @@ export default function Contact() {
     <div className="p-12 md:p-16 lg:p-20 contact-page flex flex-col items-start mt-20 justify-center">
       <h3 className="txt-lg mb-7 text-center text-gray-800 dark:text-gray-100 font-bold">
         Get in
-        <span className=" text-custom-purple dark:text-custom-blue"> Touch</span>
+        <span className=" text-purple-900 dark:text-blue-500"> Touch</span>
       </h3>
       <h5 className="text-2xl mb-5 font-light">Primary</h5>
       <div className="flex">
@@ -22,12 +22,12 @@ export default function Contact() {
         >
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="h-6 w-6 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
+            className="h-6 w-6 text-purple-900 hover:w-8 hover:h-8 dark:text-blue-500"
           />
         </a>
         <a href="tel:+919989339665" className=" ml-5 float-right">
           <FontAwesomeIcon
-            className="h-6 w-6 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
+            className="h-6 w-6 text-purple-900 hover:w-8 hover:h-8 dark:text-blue-500"
             icon={faPhone}
           />
         </a>
@@ -41,7 +41,7 @@ export default function Contact() {
           target="_blank"
         >
           <FontAwesomeIcon
-            className="h-7 w-7 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
+            className="h-7 w-7 text-purple-900 hover:w-8 hover:h-8 dark:text-blue-500"
             icon={faGithub}
           />
         </a>
@@ -51,13 +51,13 @@ export default function Contact() {
           target="_blank"
         >
           <FontAwesomeIcon
-            className="h-7 w-7 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
+            className="h-7 w-7 text-purple-900 hover:w-8 hover:h-8 dark:text-blue-500"
             icon={faLinkedin}
           />
         </a>
         <a href="https://twitter.com/chandu_sadda" target="_blank">
           <FontAwesomeIcon
-            className="h-7 w-7 text-custom-purple hover:w-8 hover:h-8 dark:text-custom-blue"
+            className="h-7 w-7 text-purple-900 hover:w-8 hover:h-8 dark:text-blue-500"
             icon={faTwitter}
           />
         </a>
@@ -67,7 +67,7 @@ export default function Contact() {
         <a
           target="_blank"
           href={`https://drive.google.com/file/d/1AT4tLPCfpdkYPwJaqwlNRCc0jX2BAYxz/view?usp=sharing`}
-          className=" text-custom-purple border-custom-purple border-4 hover:border-5 p-3 rounded border-double float-right dark:border-custom-blue dark:text-custom-blue"
+          className=" text-purple-900 border-purple-900 border-4 hover:border-5 p-3 rounded border-double float-right dark:border-blue-500 dark:text-blue-500"
         >
           Download Resume
         </a>

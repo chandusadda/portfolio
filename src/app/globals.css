@@ -1,79 +1,153 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-b, strong {
-    font-weight: revert;
+/* @custom-variant dark (&:is(.dark *)); */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+}
+
+/*
+The default border color has changed to `currentcolor` in Tailwind CSS v4,
+so we've added these compatibility styles to make sure everything still
+looks the same as it did with Tailwind CSS v3.
+
+If we ever want to remove these styles, we need to add an explicit border
+color utility to any element that depends on these defaults.
+*/
+/* @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer base {
+  :root {
+    --background: 240 20% 98%;
+    --foreground: 240 10% 20%;
+    --primary: 200 100% 50%;
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 240 30% 90%;
+    --primary: 200 100% 50%;
+  }
+
+  .neon {
+    --background: 358 70% 52%;
+    --foreground: 60 100% 90%;
+    --primary: 50 100% 50%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+.text-custom-purple {
+    --tw-text-opacity: 1;
+    color: rgb(63 0 113 / var(--tw-text-opacity));
+}
+
+.text-custom-blue {
+    --tw-text-opacity: 1;
+    color: rgb(29 157 237 / var(--tw-text-opacity));
+}
+
+.shadow-headerWhite {
+    --tw-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+    --tw-shadow-colored: 0px 3px 6px var(--tw-shadow-color);
+}
+
+.shadow-workDarkCards {
+    --tw-shadow: 0 0 7px 0 #a9acb3;
+    --tw-shadow-colored: 0 0 7px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+b,
+strong {
+  font-weight: revert;
 }
 
 /* Scroll Down */
-
 @-webkit-keyframes ani-mouse {
-    0% {
-      opacity: 1;
-      top: 29%;
-    }
-    15% {
-      opacity: 1;
-      top: 50%;
-    }
-    50% {
-      opacity: 0;
-      top: 50%;
-    }
-    100% {
-      opacity: 0;
-      top: 29%;
-    }
+  0% {
+    opacity: 1;
+    top: 29%;
   }
-  
-  @-moz-keyframes ani-mouse {
-    0% {
-      opacity: 1;
-      top: 29%;
-    }
-    15% {
-      opacity: 1;
-      top: 50%;
-    }
-    50% {
-      opacity: 0;
-      top: 50%;
-    }
-    100% {
-      opacity: 0;
-      top: 29%;
-    }
+  15% {
+    opacity: 1;
+    top: 50%;
   }
-  
-  @keyframes ani-mouse {
-    0% {
-      opacity: 1;
-      top: 29%;
-    }
-    15% {
-      opacity: 1;
-      top: 50%;
-    }
-    50% {
-      opacity: 0;
-      top: 50%;
-    }
-    100% {
-      opacity: 0;
-      top: 29%;
-    }
+  50% {
+    opacity: 0;
+    top: 50%;
   }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
 
-.scroll-btn .mouse>* {
-    animation: ani-mouse 2.5s linear infinite;
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+.scroll-btn .mouse > * {
+  animation: ani-mouse 2.5s linear infinite;
 }
 
 @media (max-width: 765px) {
   .header-links {
     display: none;
   }
-  .header-hanberger, .sidebar {
+  .header-hanberger,
+  .sidebar {
     display: block;
   }
   .work-cards {
@@ -96,13 +170,15 @@ b, strong {
   .header-links {
     display: flex;
   }
-  .header-hanberger, .sidebar {
+  .header-hanberger,
+  .sidebar {
     display: none;
   }
   .work-cards {
     flex-basis: 47%;
   }
-  .education-details, .education-img {
+  .education-details,
+  .education-img {
     float: left;
   }
   .txt-lg {
